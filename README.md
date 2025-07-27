@@ -64,6 +64,8 @@ Navigate to `http://localhost:8501` in your browser.
 ## 🌐 Live Demo
 
 **🎯 [Live Demo on Streamlit Cloud](your-streamlit-url-here)**
+## Video link
+**[https://drive.google.com/file/d/1FsKN8_sDNhvWexEEy8FXu037VjX3kPDS/view?usp=sharing]
 
 **For Judges & Evaluators:**
 
