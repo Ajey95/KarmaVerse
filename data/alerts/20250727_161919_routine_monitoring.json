@@ -1,0 +1,116 @@
+{
+  "alert": "\ud83d\udea8 Possible Vehicle Break-In Detected in Student Parking Area",
+  "priority": 3,
+  "recommended_action": "Dispatch officer to CAM_PARKING_LOT immediately to investigate the vehicle alarm and locate the individual. Advise officer to approach with caution.",
+  "explanation": "A person was detected concurrently with an activated vehicle alarm and footsteps. This combination strongly indicates a potential vehicle break-in or vandalism. The individual is unidentified, increasing the risk. An immediate on-site response is required.",
+  "risk_factors": [
+    "Active vehicle alarm",
+    "Potential crime in progress (theft/vandalism)",
+    "Unknown individual in proximity to the event"
+  ],
+  "follow_up_required": true,
+  "source_event": {
+    "camera_id": "CAM_PARKING_LOT",
+    "timestamp": "2025-07-27T10:48:53.902228+00:00",
+    "event_type": "routine_monitoring",
+    "description": "Detected: 1 person. in Student Parking Area. Audio: Vehicle alarm system activated",
+    "model_confidence": 0.8086779229606507,
+    "location": "Parking Lot",
+    "zone_context": {
+      "zone_name": "Student Parking Area",
+      "zone_id": "parking_lot",
+      "risk_factors": [],
+      "priority_boost": 0,
+      "is_high_risk_time": false,
+      "rules_triggered": 0,
+      "correlation_note": "Audio-visual correlation: 0.70"
+    },
+    "detected_objects": [
+      {
+        "class": "person",
+        "confidence": 0.8864161372184753,
+        "bbox": [
+          544,
+          281,
+          681,
+          603
+        ]
+      }
+    ],
+    "face_verification": {
+      "total_faces": 0,
+      "authorized_faces": 0,
+      "unauthorized_faces": 0,
+      "authorized_names": [],
+      "has_unauthorized": false
+    },
+    "audio_event": "footsteps",
+    "suggested_priority": 3,
+    "video_time_seconds": 0.0,
+    "frame_number": 0,
+    "processing_method": "enhanced_detection",
+    "audio_anomaly": {
+      "anomaly_type": "vehicle_alarm",
+      "confidence": 0.7273558459213012,
+      "severity": 3,
+      "description": "Vehicle alarm system activated",
+      "campus_context": "Possible vehicle break-in or theft",
+      "response_required": "Check parking areas",
+      "audio_features": {
+        "duration_seconds": 5.966473843287344,
+        "peak_frequency_hz": 4410.7242390503725,
+        "amplitude_db": 73.44530521592648,
+        "spectral_centroid": 3728.403043377036,
+        "zero_crossing_rate": 0.2514827052956615,
+        "mfcc_coefficients": [
+          3.013728820074613,
+          7.898961038206171,
+          -1.65783367704422,
+          -5.894096394956689,
+          5.78470806403236,
+          9.732206215594918,
+          2.1015468676729316,
+          3.4224882800284195,
+          -9.685974619618598,
+          -7.886952773155085,
+          0.8840185411497039,
+          -9.972702231976795,
+          7.261441570308833
+        ],
+        "spectral_rolloff": 3872.984137818015,
+        "chroma_features": [
+          0.8196112423469432,
+          0.5309503939433651,
+          0.512742712970403,
+          0.12741355148909128,
+          0.977455878451467,
+          0.515346001225444,
+          0.10942901679749417,
+          0.6108394147989434,
+          0.4894788084366428,
+          0.3440751831682358,
+          0.4056730098136768,
+          0.6033753177298159
+        ]
+      },
+      "detection_timestamp": "2025-07-27T16:19:02.448291",
+      "zone_correlation": "parking_lot",
+      "visual_event_correlation": "routine_monitoring"
+    },
+    "audio_visual_correlation": {
+      "correlation_strength": 0.7,
+      "correlation_factors": [
+        "Temporal correlation",
+        "Spatial correlation"
+      ],
+      "is_correlated": true,
+      "combined_severity": 3,
+      "multimodal_confidence": 0.8086779229606507
+    }
+  },
+  "analysis_timestamp": "2025-07-27T16:19:19.539795",
+  "analyzer": "Gemini-1.5-Pro",
+  "alert_id": "20250727_161919_routine_monitoring",
+  "created_at": "2025-07-27T10:49:19.539795+00:00",
+  "status": "active"
+}

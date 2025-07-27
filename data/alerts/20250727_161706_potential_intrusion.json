@@ -1,0 +1,119 @@
+{
+  "alert": "\ud83d\udea8 CRITICAL: Unauthorized Person & Vehicle Alarm in Student Parking Area!",
+  "priority": 4,
+  "recommended_action": "Dispatch security patrol immediately to the Student Parking Area near camera CAM_PARKING_LOT. Advise responding officers of a potential vehicle break-in in progress. Consider notifying local law enforcement.",
+  "explanation": "Priority is Critical due to the combination of a confirmed unauthorized individual and a triggered vehicle alarm, which strongly indicates an active vehicle break-in or theft. Immediate response is required to prevent property loss and apprehend the subject.",
+  "risk_factors": [
+    "Unauthorized individual",
+    "Vehicle alarm activated",
+    "Potential vehicle break-in in progress",
+    "Suspicious movement detected"
+  ],
+  "follow_up_required": true,
+  "source_event": {
+    "camera_id": "CAM_PARKING_LOT",
+    "timestamp": "2025-07-27T10:45:54.646991+00:00",
+    "event_type": "potential_intrusion",
+    "description": "Detected: 1 person. 1 unauthorized person(s). in Student Parking Area. Risk factors: Unknown person detected. Audio: Vehicle alarm system activated",
+    "model_confidence": 0.9272658028804814,
+    "location": "Parking Lot",
+    "zone_context": {
+      "zone_name": "Student Parking Area",
+      "zone_id": "parking_lot",
+      "risk_factors": [
+        "Unknown person detected"
+      ],
+      "priority_boost": 1,
+      "is_high_risk_time": false,
+      "rules_triggered": 1,
+      "correlation_note": "Audio-visual correlation: 0.70"
+    },
+    "detected_objects": [
+      {
+        "class": "person",
+        "confidence": 0.9202396869659424,
+        "bbox": [
+          393,
+          82,
+          688,
+          634
+        ]
+      }
+    ],
+    "face_verification": {
+      "total_faces": 1,
+      "authorized_faces": 0,
+      "unauthorized_faces": 1,
+      "authorized_names": [],
+      "has_unauthorized": true
+    },
+    "audio_event": "suspicious_movement",
+    "suggested_priority": 3,
+    "video_time_seconds": 7.5,
+    "frame_number": 180,
+    "processing_method": "enhanced_detection",
+    "audio_anomaly": {
+      "anomaly_type": "vehicle_alarm",
+      "confidence": 0.8745316057609628,
+      "severity": 3,
+      "description": "Vehicle alarm system activated",
+      "campus_context": "Possible vehicle break-in or theft",
+      "response_required": "Check parking areas",
+      "audio_features": {
+        "duration_seconds": 5.091548245136611,
+        "peak_frequency_hz": 7652.559863467345,
+        "amplitude_db": 84.28572286290583,
+        "spectral_centroid": 2635.14365609855,
+        "zero_crossing_rate": 0.170472882309636,
+        "mfcc_coefficients": [
+          8.573091337208346,
+          6.251032388418501,
+          4.376529138454206,
+          -5.420190210947922,
+          -7.780568228746141,
+          -2.342630136449422,
+          9.506403627945847,
+          9.898660881510786,
+          -9.780200835741555,
+          -1.5565305430044436,
+          -7.35400175382634,
+          -3.3805989954848865,
+          -4.846426626883806
+        ],
+        "spectral_rolloff": 5590.612402935574,
+        "chroma_features": [
+          0.0962923169303459,
+          0.4365432688988551,
+          0.5317311377693473,
+          0.5789449513549046,
+          0.8079871729551414,
+          0.043598728258696595,
+          0.0629722944488682,
+          0.678044891066012,
+          0.3340861929241039,
+          0.8894792895321346,
+          0.4104719726127348,
+          0.8253847444885706
+        ]
+      },
+      "detection_timestamp": "2025-07-27T16:15:54.747377",
+      "zone_correlation": "parking_lot",
+      "visual_event_correlation": "potential_intrusion"
+    },
+    "audio_visual_correlation": {
+      "correlation_strength": 0.7,
+      "correlation_factors": [
+        "Temporal correlation",
+        "Spatial correlation"
+      ],
+      "is_correlated": true,
+      "combined_severity": 3,
+      "multimodal_confidence": 0.9272658028804814
+    }
+  },
+  "analysis_timestamp": "2025-07-27T16:17:06.428709",
+  "analyzer": "Gemini-1.5-Pro",
+  "alert_id": "20250727_161706_potential_intrusion",
+  "created_at": "2025-07-27T10:47:06.428709+00:00",
+  "status": "active"
+}

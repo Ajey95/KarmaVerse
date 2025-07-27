@@ -1,0 +1,104 @@
+{
+  "alert": "\u26a0\ufe0f High-Tension Crowd Forming at Main Gate",
+  "priority": 3,
+  "recommended_action": "Dispatch security personnel to the Main Gate to assess the situation, de-escalate the conflict, and separate the individuals involved. Maintain a safe distance initially and request backup if the situation appears volatile.",
+  "explanation": "A crowd involving both authorized and unauthorized individuals is forming at a primary campus entry point, accompanied by loud shouting. This indicates a high-tension situation (e.g., protest, altercation) that could escalate, disrupting campus access and posing a safety risk.",
+  "risk_factors": [
+    "Potential for physical altercation",
+    "Disruption to campus access/egress at Main Gate",
+    "Presence of unauthorized individuals",
+    "Verbal conflict escalating to a larger disturbance"
+  ],
+  "follow_up_required": true,
+  "source_event": {
+    "camera_id": "Gate3",
+    "timestamp": "2025-07-27T16:39:15.082103",
+    "video_time_seconds": 0,
+    "frame_number": 7141,
+    "event_type": "crowd_formation",
+    "description": "Unusual crowd density near main gate. Audio: Loud shouting or yelling detected",
+    "model_confidence": 0.7782918763508019,
+    "location": "Main Gate",
+    "face_verification": {
+      "total_faces": 1,
+      "authorized_faces": 2,
+      "unauthorized_faces": 2,
+      "authorized_names": [
+        "Mike_Johnson",
+        "Jane_Smith"
+      ]
+    },
+    "audio_event": "none",
+    "zone_context": {
+      "zone_name": "Dormitory",
+      "zone_id": "dormitory",
+      "is_high_risk_time": true,
+      "correlation_note": "Audio-visual correlation: 1.00"
+    },
+    "audio_anomaly": {
+      "anomaly_type": "shouting",
+      "confidence": 0.7865837527016037,
+      "severity": 3,
+      "description": "Loud shouting or yelling detected",
+      "campus_context": "Possible altercation or emergency",
+      "response_required": "Security assessment needed",
+      "audio_features": {
+        "duration_seconds": 4.798074629492158,
+        "peak_frequency_hz": 1265.4842744038597,
+        "amplitude_db": 84.62410476350921,
+        "spectral_centroid": 3362.074133069119,
+        "zero_crossing_rate": 0.2066352891715369,
+        "mfcc_coefficients": [
+          -2.2908747557514086,
+          -1.1692898050190426,
+          -9.821153640925795,
+          5.832631932297437,
+          0.5145486354004483,
+          3.542665539290205,
+          5.9073122162700855,
+          -4.84305660613712,
+          0.3405171522559911,
+          -6.09780133307474,
+          -1.1433748269230133,
+          4.949175721484078,
+          -3.0790545550221466
+        ],
+        "spectral_rolloff": 7178.2986145925315,
+        "chroma_features": [
+          0.9850505893386099,
+          0.09174325362815305,
+          0.4929867533752098,
+          0.5931511474072851,
+          0.47705688142815594,
+          0.5605899553057864,
+          0.22308659727691882,
+          0.5064035577515275,
+          0.1286427452668214,
+          0.1414437725469604,
+          0.19894828606958548,
+          0.7796064566234653
+        ]
+      },
+      "detection_timestamp": "2025-07-27T16:39:15.082103",
+      "zone_correlation": "dormitory",
+      "visual_event_correlation": "crowd_formation"
+    },
+    "audio_visual_correlation": {
+      "correlation_strength": 1.0,
+      "correlation_factors": [
+        "Temporal correlation",
+        "Spatial correlation",
+        "Event-type correlation: shouting + crowd"
+      ],
+      "is_correlated": true,
+      "combined_severity": 3,
+      "multimodal_confidence": 0.7782918763508019
+    },
+    "suggested_priority": 3
+  },
+  "analysis_timestamp": "2025-07-27T16:39:31.215400",
+  "analyzer": "Gemini-1.5-Pro",
+  "alert_id": "20250727_163931_crowd_formation",
+  "created_at": "2025-07-27T11:09:31.216390+00:00",
+  "status": "active"
+}

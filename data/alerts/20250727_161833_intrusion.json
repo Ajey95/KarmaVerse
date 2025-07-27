@@ -1,0 +1,44 @@
+{
+  "alert": "\u26a0\ufe0f CRITICAL INTRUSION: Two unauthorized individuals bypassed Main Gate with an authorized person.",
+  "priority": 4,
+  "recommended_action": "Dispatch patrol unit to Main Gate immediately. Locate and identify authorized person 'Mike_Johnson' and the two accompanying unauthorized individuals. Ascertain the nature of the breach and escort unauthorized persons to the security office for processing.",
+  "explanation": "A critical priority is assigned due to a confirmed breach of a primary access point (Main Gate) by two unidentified individuals. The involvement of a known authorized person requires immediate intervention to determine intent (e.g., coercion or accomplice) and mitigate any potential threat to campus safety.",
+  "risk_factors": [
+    "Successful breach of primary perimeter security",
+    "Two unknown, unauthorized individuals on campus",
+    "Potential insider-assisted intrusion",
+    "High-confidence detection"
+  ],
+  "follow_up_required": true,
+  "source_event": {
+    "camera_id": "Gate3",
+    "timestamp": "2025-07-27T16:18:13.497311",
+    "video_time_seconds": 0,
+    "frame_number": 4735,
+    "event_type": "intrusion",
+    "description": "Individual bypassing security checkpoint",
+    "model_confidence": 0.95,
+    "location": "Main Gate",
+    "face_verification": {
+      "total_faces": 0,
+      "authorized_faces": 1,
+      "unauthorized_faces": 2,
+      "authorized_names": [
+        "Mike_Johnson"
+      ]
+    },
+    "audio_event": "none",
+    "zone_context": {
+      "zone_name": "Dormitory",
+      "zone_id": "dormitory",
+      "is_high_risk_time": false
+    },
+    "audio_anomaly": null,
+    "audio_visual_correlation": null
+  },
+  "analysis_timestamp": "2025-07-27T16:18:33.467909",
+  "analyzer": "Gemini-1.5-Pro",
+  "alert_id": "20250727_161833_intrusion",
+  "created_at": "2025-07-27T10:48:33.469119+00:00",
+  "status": "active"
+}

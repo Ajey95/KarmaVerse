@@ -1,0 +1,64 @@
+{
+  "alert": "\u26a0\ufe0f CRITICAL: Unauthorized Person Detected in Campus Construction Zone!",
+  "priority": 4,
+  "recommended_action": "Immediately dispatch a security unit to the Construction Zone (near CAM_CONSTRUCTION_SITE) to locate, identify, and escort the unauthorized individual out of the restricted area. Advise responding officers that the individual may lack proper safety gear.",
+  "explanation": "An unidentified individual has entered a high-risk, restricted construction zone. This constitutes a significant safety liability and a security breach. The high confidence detection, coupled with an audio anomaly, warrants an immediate response to mitigate potential injury, theft, or vandalism.",
+  "risk_factors": [
+    "Intrusion into a restricted, high-hazard area",
+    "Significant personal safety risk to the individual",
+    "Potential for theft or vandalism of equipment/materials",
+    "Subject is unidentified and unauthorized",
+    "Audio anomaly detected ('suspicious_movement')"
+  ],
+  "follow_up_required": true,
+  "source_event": {
+    "camera_id": "CAM_CONSTRUCTION_SITE",
+    "timestamp": "2025-07-27T10:53:06.291054+00:00",
+    "event_type": "unauthorized_construction_access",
+    "description": "Detected: 1 person. 1 unauthorized person(s). in Campus Construction Zone. Risk factors: Unauthorized person in restricted zone; Person in construction zone - safety gear check required",
+    "model_confidence": 0.98,
+    "location": "Construction Zone",
+    "zone_context": {
+      "zone_name": "Campus Construction Zone",
+      "zone_id": "construction_site",
+      "risk_factors": [
+        "Unauthorized person in restricted zone",
+        "Person in construction zone - safety gear check required"
+      ],
+      "priority_boost": 3,
+      "is_high_risk_time": false,
+      "rules_triggered": 2
+    },
+    "detected_objects": [
+      {
+        "class": "person",
+        "confidence": 0.9202396869659424,
+        "bbox": [
+          393,
+          82,
+          688,
+          634
+        ]
+      }
+    ],
+    "face_verification": {
+      "total_faces": 1,
+      "authorized_faces": 0,
+      "unauthorized_faces": 1,
+      "authorized_names": [],
+      "has_unauthorized": true
+    },
+    "audio_event": "suspicious_movement",
+    "suggested_priority": 5,
+    "video_time_seconds": 7.5,
+    "frame_number": 180,
+    "processing_method": "enhanced_detection",
+    "audio_anomaly": null,
+    "audio_visual_correlation": null
+  },
+  "analysis_timestamp": "2025-07-27T16:24:14.297073",
+  "analyzer": "Gemini-1.5-Pro",
+  "alert_id": "20250727_162414_unauthorized_construction_access",
+  "created_at": "2025-07-27T10:54:14.297073+00:00",
+  "status": "active"
+}

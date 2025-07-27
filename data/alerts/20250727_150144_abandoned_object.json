@@ -1,0 +1,93 @@
+{
+  "alert": "\ud83d\udea8 Abandoned Object Detected",
+  "priority": 3,
+  "recommended_action": "Investigate abandoned_object at Construction Zone",
+  "explanation": "Suspicious package detected in parking area. Audio: Vehicle alarm system activated",
+  "source_event": {
+    "camera_id": "Gate3",
+    "timestamp": "2025-07-27T15:01:44.807325",
+    "video_time_seconds": 0,
+    "frame_number": 3395,
+    "event_type": "abandoned_object",
+    "description": "Suspicious package detected in parking area. Audio: Vehicle alarm system activated",
+    "model_confidence": 0.8843446678983782,
+    "location": "Construction Zone",
+    "face_verification": {
+      "total_faces": 3,
+      "authorized_faces": 0,
+      "unauthorized_faces": 0,
+      "authorized_names": []
+    },
+    "audio_event": "none",
+    "zone_context": {
+      "zone_name": "Parking Lot",
+      "zone_id": "parking_lot",
+      "is_high_risk_time": true,
+      "correlation_note": "Audio-visual correlation: 0.70"
+    },
+    "audio_anomaly": {
+      "anomaly_type": "vehicle_alarm",
+      "confidence": 0.8686893357967562,
+      "severity": 3,
+      "description": "Vehicle alarm system activated",
+      "campus_context": "Possible vehicle break-in or theft",
+      "response_required": "Check parking areas",
+      "audio_features": {
+        "duration_seconds": 2.1364195197526232,
+        "peak_frequency_hz": 2440.666479032583,
+        "amplitude_db": 64.03038157040397,
+        "spectral_centroid": 3895.816929842195,
+        "zero_crossing_rate": 0.19359576634791742,
+        "mfcc_coefficients": [
+          0.06896258541850386,
+          -7.103972758357761,
+          -6.079036037938453,
+          8.12194729483383,
+          9.538679050040841,
+          -1.3477313267199786,
+          7.253357189870165,
+          0.5856882929041074,
+          -5.427625701661329,
+          5.169634228229841,
+          -3.7283082771954623,
+          6.305315744590253,
+          5.3292870900689575
+        ],
+        "spectral_rolloff": 7679.487399185997,
+        "chroma_features": [
+          0.7288690874440816,
+          0.28310150560617,
+          0.42184704022883923,
+          0.4726168033213779,
+          0.33730095472653254,
+          0.8535646685342768,
+          0.6873273872699639,
+          0.6948494595564504,
+          0.15547758499143582,
+          0.13504750008508437,
+          0.37567881677463755,
+          0.5304168939572458
+        ]
+      },
+      "detection_timestamp": "2025-07-27T15:01:44.807325",
+      "zone_correlation": "parking_lot",
+      "visual_event_correlation": "abandoned_object"
+    },
+    "audio_visual_correlation": {
+      "correlation_strength": 0.7,
+      "correlation_factors": [
+        "Temporal correlation",
+        "Spatial correlation"
+      ],
+      "is_correlated": true,
+      "combined_severity": 3,
+      "multimodal_confidence": 0.8843446678983782
+    },
+    "suggested_priority": 3
+  },
+  "analysis_timestamp": "2025-07-27T15:01:44.808322",
+  "analyzer": "Demo-Fallback-System",
+  "alert_id": "20250727_150144_abandoned_object",
+  "created_at": "2025-07-27T09:31:44.808322+00:00",
+  "status": "active"
+}

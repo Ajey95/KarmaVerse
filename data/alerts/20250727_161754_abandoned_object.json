@@ -1,0 +1,44 @@
+{
+  "alert": "\u26a0\ufe0f CRITICAL ALERT: Suspicious Package Detected at Admin Building",
+  "priority": 4,
+  "recommended_action": "Immediately dispatch response team to Admin Building parking area. Establish a safety perimeter of at least 300 feet. Cordon off the area and initiate evacuation of the Admin Building. DO NOT approach the package. Contact local law enforcement and request EOD support.",
+  "explanation": "The detection of a suspicious package in a sensitive location like the Admin Building, combined with the presence of two unauthorized individuals, constitutes a potential and immediate threat to campus safety. The situation requires an immediate, cautious response to mitigate potential harm.",
+  "risk_factors": [
+    "Suspicious package near sensitive Admin Building",
+    "Presence of two unauthorized individuals",
+    "Potential for explosive device",
+    "High-traffic area during business hours"
+  ],
+  "follow_up_required": true,
+  "source_event": {
+    "camera_id": "Gate3",
+    "timestamp": "2025-07-27T16:17:35.678066",
+    "video_time_seconds": 0,
+    "frame_number": 6974,
+    "event_type": "abandoned_object",
+    "description": "Suspicious package detected in parking area",
+    "model_confidence": 0.82,
+    "location": "Admin Building",
+    "face_verification": {
+      "total_faces": 3,
+      "authorized_faces": 1,
+      "unauthorized_faces": 2,
+      "authorized_names": [
+        "Sarah_Wilson"
+      ]
+    },
+    "audio_event": "none",
+    "zone_context": {
+      "zone_name": "Construction Site",
+      "zone_id": "construction_site",
+      "is_high_risk_time": false
+    },
+    "audio_anomaly": null,
+    "audio_visual_correlation": null
+  },
+  "analysis_timestamp": "2025-07-27T16:17:54.444008",
+  "analyzer": "Gemini-1.5-Pro",
+  "alert_id": "20250727_161754_abandoned_object",
+  "created_at": "2025-07-27T10:47:54.444008+00:00",
+  "status": "active"
+}

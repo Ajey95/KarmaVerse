@@ -1,0 +1,43 @@
+{
+  "alert": "\u26a0\ufe0f Suspicious Activity - Loitering",
+  "priority": 3,
+  "recommended_action": "Monitor situation and prepare to intervene",
+  "explanation": "Fallback analysis due to API error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n}\nviolations {\n}\nviolations {\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 55\n}\n]",
+  "risk_factors": [
+    "API communication failure",
+    "loitering"
+  ],
+  "follow_up_required": true,
+  "source_event": {
+    "camera_id": "Gate3",
+    "timestamp": "2025-07-27T14:34:03.113092",
+    "video_time_seconds": 0,
+    "frame_number": 4129,
+    "event_type": "loitering",
+    "description": "Person pacing back and forth near entrance",
+    "model_confidence": 0.88,
+    "location": "Parking Lot",
+    "face_verification": {
+      "total_faces": 3,
+      "authorized_faces": 1,
+      "unauthorized_faces": 0,
+      "authorized_names": [
+        "Sarah_Wilson"
+      ]
+    },
+    "audio_event": "none",
+    "zone_context": {
+      "zone_name": "Library",
+      "zone_id": "library",
+      "is_high_risk_time": true
+    },
+    "audio_anomaly": null,
+    "audio_visual_correlation": null
+  },
+  "analysis_timestamp": "2025-07-27T14:34:03.529862",
+  "analyzer": "Fallback-System",
+  "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n}\nviolations {\n}\nviolations {\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 55\n}\n]",
+  "alert_id": "20250727_143403_loitering",
+  "created_at": "2025-07-27T09:04:03.529862+00:00",
+  "status": "active"
+}

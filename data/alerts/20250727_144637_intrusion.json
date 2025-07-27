@@ -1,0 +1,101 @@
+{
+  "alert": "\ud83d\udea8 Security Breach - Intrusion",
+  "priority": 4,
+  "recommended_action": "Dispatch security team immediately",
+  "explanation": "Fallback analysis due to API error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n}\nviolations {\n}\nviolations {\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 21\n}\n]",
+  "risk_factors": [
+    "API communication failure",
+    "intrusion"
+  ],
+  "follow_up_required": true,
+  "source_event": {
+    "camera_id": "Gate3",
+    "timestamp": "2025-07-27T14:46:37.297708",
+    "video_time_seconds": 0,
+    "frame_number": 7159,
+    "event_type": "intrusion",
+    "description": "Person climbing over fence. Audio: Vehicle alarm system activated",
+    "model_confidence": 0.9199332005036809,
+    "location": "Parking Lot",
+    "face_verification": {
+      "total_faces": 1,
+      "authorized_faces": 1,
+      "unauthorized_faces": 0,
+      "authorized_names": [
+        "John_Doe"
+      ]
+    },
+    "audio_event": "none",
+    "zone_context": {
+      "zone_name": "Parking Lot",
+      "zone_id": "parking_lot",
+      "is_high_risk_time": true,
+      "correlation_note": "Audio-visual correlation: 0.70"
+    },
+    "audio_anomaly": {
+      "anomaly_type": "vehicle_alarm",
+      "confidence": 0.8698664010073618,
+      "severity": 3,
+      "description": "Vehicle alarm system activated",
+      "campus_context": "Possible vehicle break-in or theft",
+      "response_required": "Check parking areas",
+      "audio_features": {
+        "duration_seconds": 6.165848182302753,
+        "peak_frequency_hz": 2732.1324855668486,
+        "amplitude_db": 64.91107139662446,
+        "spectral_centroid": 2520.783796073607,
+        "zero_crossing_rate": 0.11904213728251166,
+        "mfcc_coefficients": [
+          -2.752247185879842,
+          1.4165269460921355,
+          1.7283343554928479,
+          -6.6857665000405,
+          4.264906534559019,
+          0.9356817821148393,
+          9.994554655377193,
+          7.464834276818909,
+          4.5334817400920375,
+          -0.26484492297521456,
+          -3.8821293433562465,
+          2.435036782691082,
+          -2.0678416066521947
+        ],
+        "spectral_rolloff": 3368.6442591297173,
+        "chroma_features": [
+          0.863857916843005,
+          0.5480217858359833,
+          0.9755134555195895,
+          0.5303697131635992,
+          0.16337871211767452,
+          0.09736737050032362,
+          0.28549340957304814,
+          0.016731195327204906,
+          0.6773821119067107,
+          0.7304786868945615,
+          0.7085838283333816,
+          0.20206021605816205
+        ]
+      },
+      "detection_timestamp": "2025-07-27T14:46:37.297708",
+      "zone_correlation": "parking_lot",
+      "visual_event_correlation": "intrusion"
+    },
+    "audio_visual_correlation": {
+      "correlation_strength": 0.7,
+      "correlation_factors": [
+        "Temporal correlation",
+        "Spatial correlation"
+      ],
+      "is_correlated": true,
+      "combined_severity": 3,
+      "multimodal_confidence": 0.9199332005036809
+    },
+    "suggested_priority": 3
+  },
+  "analysis_timestamp": "2025-07-27T14:46:37.642608",
+  "analyzer": "Fallback-System",
+  "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n}\nviolations {\n}\nviolations {\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 21\n}\n]",
+  "alert_id": "20250727_144637_intrusion",
+  "created_at": "2025-07-27T09:16:37.642608+00:00",
+  "status": "active"
+}

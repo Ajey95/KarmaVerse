@@ -1,0 +1,45 @@
+{
+  "alert": "\u26a0\ufe0f Unauthorized Individuals Loitering in Parking Lot Near Gate 3",
+  "priority": 3,
+  "recommended_action": "Dispatch a security officer to Parking Lot near Gate 3 to observe and engage with the two unauthorized individuals. Verify their purpose on campus.",
+  "explanation": "The presence of two unidentified individuals loitering in a parking area elevates this beyond a routine event. This behavior is highly suspicious and presents a potential risk for property crime (vehicle break-ins) or casing for a future unauthorized entry. A high priority is assigned due to the unknown intent and presence of multiple unauthorized persons.",
+  "risk_factors": [
+    "Presence of unauthorized individuals",
+    "Loitering in a sensitive area (Parking Lot)",
+    "Proximity to campus access point (Gate 3)",
+    "Potential for vehicle theft/vandalism"
+  ],
+  "follow_up_required": true,
+  "source_event": {
+    "camera_id": "Gate3",
+    "timestamp": "2025-07-27T16:38:22.598982",
+    "video_time_seconds": 0,
+    "frame_number": 3772,
+    "event_type": "loitering",
+    "description": "Individual lingering in parking area for extended period",
+    "model_confidence": 0.95,
+    "location": "Parking Lot",
+    "face_verification": {
+      "total_faces": 2,
+      "authorized_faces": 2,
+      "unauthorized_faces": 2,
+      "authorized_names": [
+        "Jane_Smith",
+        "Mike_Johnson"
+      ]
+    },
+    "audio_event": "none",
+    "zone_context": {
+      "zone_name": "Main Gate",
+      "zone_id": "main_gate",
+      "is_high_risk_time": false
+    },
+    "audio_anomaly": null,
+    "audio_visual_correlation": null
+  },
+  "analysis_timestamp": "2025-07-27T16:38:37.625362",
+  "analyzer": "Gemini-1.5-Pro",
+  "alert_id": "20250727_163837_loitering",
+  "created_at": "2025-07-27T11:08:37.626314+00:00",
+  "status": "active"
+}

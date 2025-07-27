@@ -1,0 +1,62 @@
+{
+  "alert": "\u26a0\ufe0f Person Detected in Construction Zone with Audible Shouting. Possible Injury or Altercation.",
+  "priority": 4,
+  "recommended_action": "Dispatch security patrol immediately to the construction zone (CAM_CONSTRUCTION_SITE) to investigate the source of the shouting. Approach with caution and be prepared for a potential medical emergency or conflict.",
+  "explanation": "Priority is CRITICAL. While the initial trigger is a safety check, the addition of an audio anomaly (shouting) elevates the event significantly. This combination indicates a high probability of a safety incident, injury, or altercation requiring immediate intervention. The person is unidentified, increasing the risk.",
+  "risk_factors": [
+    "Unidentified person in a restricted, hazardous area",
+    "Audible shouting indicating potential distress, injury, or conflict",
+    "High potential for workplace accident or personal injury",
+    "Unauthorized access to a high-risk zone"
+  ],
+  "follow_up_required": true,
+  "source_event": {
+    "camera_id": "CAM_CONSTRUCTION_SITE",
+    "timestamp": "2025-07-27T10:48:58.620881+00:00",
+    "event_type": "construction_safety_check",
+    "description": "Detected: 1 person. in Campus Construction Zone. Risk factors: Person in construction zone - safety gear check required",
+    "model_confidence": 0.71,
+    "location": "Construction Zone",
+    "zone_context": {
+      "zone_name": "Campus Construction Zone",
+      "zone_id": "construction_site",
+      "risk_factors": [
+        "Person in construction zone - safety gear check required"
+      ],
+      "priority_boost": 1,
+      "is_high_risk_time": false,
+      "rules_triggered": 1
+    },
+    "detected_objects": [
+      {
+        "class": "person",
+        "confidence": 0.5897780656814575,
+        "bbox": [
+          519,
+          135,
+          738,
+          638
+        ]
+      }
+    ],
+    "face_verification": {
+      "total_faces": 0,
+      "authorized_faces": 0,
+      "unauthorized_faces": 0,
+      "authorized_names": [],
+      "has_unauthorized": false
+    },
+    "audio_event": "shouting",
+    "suggested_priority": 3,
+    "video_time_seconds": 5.0,
+    "frame_number": 120,
+    "processing_method": "enhanced_detection",
+    "audio_anomaly": null,
+    "audio_visual_correlation": null
+  },
+  "analysis_timestamp": "2025-07-27T16:19:54.677459",
+  "analyzer": "Gemini-1.5-Pro",
+  "alert_id": "20250727_161954_construction_safety_check",
+  "created_at": "2025-07-27T10:49:54.677459+00:00",
+  "status": "active"
+}

@@ -1,0 +1,101 @@
+{
+  "alert": "\u26a0\ufe0f Authorized Person Bypassed Security Checkpoint at Main Gate",
+  "priority": 2,
+  "recommended_action": "Contact the identified individual, Jane Smith, to inquire about the event. Review camera footage from Gate3 to understand the context of the checkpoint bypass and the associated vehicle alarm. No immediate security dispatch is required.",
+  "explanation": "Priority is set to medium-low because the individual is authorized (Jane Smith), significantly reducing the threat of malicious intrusion. However, a security protocol was breached at a primary access point (Main Gate), and a vehicle alarm was triggered, which requires investigation to ensure policy compliance and check for equipment malfunction.",
+  "risk_factors": [
+    "Security protocol violation",
+    "Unusual activity at a primary access point",
+    "Potential for equipment malfunction (gate or vehicle access system)"
+  ],
+  "follow_up_required": true,
+  "source_event": {
+    "camera_id": "Gate3",
+    "timestamp": "2025-07-27T16:38:03.141396",
+    "video_time_seconds": 0,
+    "frame_number": 4926,
+    "event_type": "intrusion",
+    "description": "Individual bypassing security checkpoint. Audio: Vehicle alarm system activated",
+    "model_confidence": 0.9333861663722052,
+    "location": "Main Gate",
+    "face_verification": {
+      "total_faces": 3,
+      "authorized_faces": 1,
+      "unauthorized_faces": 0,
+      "authorized_names": [
+        "Jane_Smith"
+      ]
+    },
+    "audio_event": "none",
+    "zone_context": {
+      "zone_name": "Parking Lot",
+      "zone_id": "parking_lot",
+      "is_high_risk_time": false,
+      "correlation_note": "Audio-visual correlation: 0.70"
+    },
+    "audio_anomaly": {
+      "anomaly_type": "vehicle_alarm",
+      "confidence": 0.9167723327444103,
+      "severity": 3,
+      "description": "Vehicle alarm system activated",
+      "campus_context": "Possible vehicle break-in or theft",
+      "response_required": "Check parking areas",
+      "audio_features": {
+        "duration_seconds": 3.6492217862260725,
+        "peak_frequency_hz": 7190.037475951176,
+        "amplitude_db": 63.083354397514,
+        "spectral_centroid": 1004.4244492399531,
+        "zero_crossing_rate": 0.18383608376501565,
+        "mfcc_coefficients": [
+          5.681040454363238,
+          5.1495905324026285,
+          -2.9438990179298656,
+          5.1061398462833925,
+          5.048485570411449,
+          3.386281893054843,
+          -9.745708531327972,
+          9.802674905597556,
+          -4.377239723002731,
+          8.578480017746337,
+          5.985109800842938,
+          1.6399840384183033,
+          6.278631544314646
+        ],
+        "spectral_rolloff": 3611.08147635707,
+        "chroma_features": [
+          0.6740277358018183,
+          0.6705813270132247,
+          0.7567478349384652,
+          0.342315193980952,
+          0.6765648171690819,
+          0.43841489751895024,
+          0.11609588120126624,
+          0.5829184102487337,
+          0.9924212199914996,
+          0.08829078327206663,
+          0.5404254649643654,
+          0.029182721267739575
+        ]
+      },
+      "detection_timestamp": "2025-07-27T16:38:03.141396",
+      "zone_correlation": "parking_lot",
+      "visual_event_correlation": "intrusion"
+    },
+    "audio_visual_correlation": {
+      "correlation_strength": 0.7,
+      "correlation_factors": [
+        "Temporal correlation",
+        "Spatial correlation"
+      ],
+      "is_correlated": true,
+      "combined_severity": 3,
+      "multimodal_confidence": 0.9333861663722052
+    },
+    "suggested_priority": 3
+  },
+  "analysis_timestamp": "2025-07-27T16:38:22.596110",
+  "analyzer": "Gemini-1.5-Pro",
+  "alert_id": "20250727_163822_intrusion",
+  "created_at": "2025-07-27T11:08:22.596110+00:00",
+  "status": "active"
+}

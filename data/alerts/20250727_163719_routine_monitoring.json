@@ -1,0 +1,57 @@
+{
+  "alert": "Routine Activity: Person detected in Library during operating hours. \ud83d\udcda",
+  "priority": 1,
+  "recommended_action": "Log event for record-keeping. No dispatch or immediate action required.",
+  "explanation": "Priority is low as a single individual was detected in a public space (Library) during normal operating hours. The audio anomaly (whispers) is consistent with the location's expected use. Inconclusive face verification is common in public areas and does not indicate a threat in this context.",
+  "risk_factors": [
+    "Inconclusive face verification"
+  ],
+  "follow_up_required": false,
+  "source_event": {
+    "camera_id": "CAM_LIBRARY",
+    "timestamp": "2025-07-27T11:06:28.927930+00:00",
+    "event_type": "routine_monitoring",
+    "description": "Detected: 1 person. in Academic Library",
+    "model_confidence": 0.59,
+    "location": "Library",
+    "zone_context": {
+      "zone_name": "Academic Library",
+      "zone_id": "library",
+      "risk_factors": [],
+      "priority_boost": 0,
+      "is_high_risk_time": false,
+      "rules_triggered": 0
+    },
+    "detected_objects": [
+      {
+        "class": "person",
+        "confidence": 0.5897780656814575,
+        "bbox": [
+          519,
+          135,
+          738,
+          638
+        ]
+      }
+    ],
+    "face_verification": {
+      "total_faces": 0,
+      "authorized_faces": 0,
+      "unauthorized_faces": 0,
+      "authorized_names": [],
+      "has_unauthorized": false
+    },
+    "audio_event": "whispers",
+    "suggested_priority": 2,
+    "video_time_seconds": 5.0,
+    "frame_number": 120,
+    "processing_method": "enhanced_detection",
+    "audio_anomaly": null,
+    "audio_visual_correlation": null
+  },
+  "analysis_timestamp": "2025-07-27T16:37:19.930610",
+  "analyzer": "Gemini-1.5-Pro",
+  "alert_id": "20250727_163719_routine_monitoring",
+  "created_at": "2025-07-27T11:07:19.930610+00:00",
+  "status": "active"
+}

@@ -1,0 +1,61 @@
+{
+  "alert": "\u26a0\ufe0f Unauthorized Presence Detected: Unknown individual located in the Academic Library outside of standard operating hours. Audio anomaly (whispers) detected.",
+  "priority": 4,
+  "recommended_action": "Dispatch security patrol to the Academic Library immediately to investigate and secure the location. Approach with caution. Verify the individual's identity and authorization. Check all entrances/exits for signs of forced entry.",
+  "explanation": "Priority is critical due to the presence of an unidentified individual inside the Academic Library, a sensitive area, likely outside of normal operating hours. The lack of face verification and the detection of whispers increase the risk of a security breach or illicit activity.",
+  "risk_factors": [
+    "Unidentified individual",
+    "Presence in a secure building",
+    "Detection outside of typical operating hours",
+    "Suspicious audio anomaly (whispers)",
+    "Location contains valuable assets (computers, research)"
+  ],
+  "follow_up_required": true,
+  "source_event": {
+    "camera_id": "CAM_LIBRARY",
+    "timestamp": "2025-07-27T10:38:04.440343+00:00",
+    "event_type": "routine_monitoring",
+    "description": "Detected: 1 person. in Academic Library",
+    "model_confidence": 0.92,
+    "location": "Admin Building",
+    "zone_context": {
+      "zone_name": "Academic Library",
+      "zone_id": "library",
+      "risk_factors": [],
+      "priority_boost": 0,
+      "is_high_risk_time": false,
+      "rules_triggered": 0
+    },
+    "detected_objects": [
+      {
+        "class": "person",
+        "confidence": 0.9188568592071533,
+        "bbox": [
+          527,
+          84,
+          778,
+          582
+        ]
+      }
+    ],
+    "face_verification": {
+      "total_faces": 0,
+      "authorized_faces": 0,
+      "unauthorized_faces": 0,
+      "authorized_names": [],
+      "has_unauthorized": false
+    },
+    "audio_event": "whispers",
+    "suggested_priority": 2,
+    "video_time_seconds": 2.5,
+    "frame_number": 60,
+    "processing_method": "enhanced_detection",
+    "audio_anomaly": null,
+    "audio_visual_correlation": null
+  },
+  "analysis_timestamp": "2025-07-27T16:08:43.762979",
+  "analyzer": "Gemini-1.5-Pro",
+  "alert_id": "20250727_160843_routine_monitoring",
+  "created_at": "2025-07-27T10:38:43.763611+00:00",
+  "status": "active"
+}

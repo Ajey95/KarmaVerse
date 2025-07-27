@@ -1,0 +1,44 @@
+{
+  "alert": "\u2139\ufe0f Security Event - Abandoned Object",
+  "priority": 2,
+  "recommended_action": "Review and assess situation",
+  "explanation": "Fallback analysis due to API error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n}\nviolations {\n}\nviolations {\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 24\n}\n]",
+  "risk_factors": [
+    "API communication failure",
+    "abandoned_object"
+  ],
+  "follow_up_required": true,
+  "source_event": {
+    "camera_id": "Gate3",
+    "timestamp": "2025-07-27T14:46:34.017220",
+    "video_time_seconds": 0,
+    "frame_number": 7500,
+    "event_type": "abandoned_object",
+    "description": "Suspicious package detected in parking area",
+    "model_confidence": 0.82,
+    "location": "Parking Lot",
+    "face_verification": {
+      "total_faces": 3,
+      "authorized_faces": 2,
+      "unauthorized_faces": 0,
+      "authorized_names": [
+        "Mike_Johnson",
+        "Jane_Smith"
+      ]
+    },
+    "audio_event": "none",
+    "zone_context": {
+      "zone_name": "Dormitory",
+      "zone_id": "dormitory",
+      "is_high_risk_time": true
+    },
+    "audio_anomaly": null,
+    "audio_visual_correlation": null
+  },
+  "analysis_timestamp": "2025-07-27T14:46:34.443853",
+  "analyzer": "Fallback-System",
+  "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n}\nviolations {\n}\nviolations {\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 24\n}\n]",
+  "alert_id": "20250727_144634_abandoned_object",
+  "created_at": "2025-07-27T09:16:34.444895+00:00",
+  "status": "active"
+}
