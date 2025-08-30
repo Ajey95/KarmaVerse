@@ -1,0 +1,103 @@
+{
+  "alert": "\ud83d\udea8 EMERGENCY: Active Fence Breach and Vandalism at Main Gate!",
+  "priority": 5,
+  "recommended_action": "IMMEDIATELY dispatch patrol to Main Gate (Camera Gate3). Approach with caution due to signs of forced entry (glass breaking). Verify the status of authorized staff Jane Smith and John Doe and apprehend the individual climbing the fence.",
+  "explanation": "A high-confidence fence climb at a primary entry point constitutes a critical perimeter breach. The concurrent 'glass_breaking' audio alert indicates potential vandalism or forceful entry, escalating the threat to an emergency level. The presence of authorized staff during the event is highly anomalous and requires immediate investigation to rule out duress or an insider-related incident.",
+  "risk_factors": [
+    "Active perimeter breach",
+    "Forced entry (glass breaking audio)",
+    "Sensitive location (Main Gate)",
+    "Anomalous presence of authorized staff during intrusion"
+  ],
+  "follow_up_required": true,
+  "source_event": {
+    "camera_id": "Gate3",
+    "timestamp": "2025-07-27T16:38:53.035219",
+    "video_time_seconds": 0,
+    "frame_number": 9925,
+    "event_type": "intrusion",
+    "description": "Person climbing over fence. Audio: Excessive noise levels detected",
+    "model_confidence": 0.8490101032745363,
+    "location": "Main Gate",
+    "face_verification": {
+      "total_faces": 1,
+      "authorized_faces": 2,
+      "unauthorized_faces": 0,
+      "authorized_names": [
+        "Jane_Smith",
+        "John_Doe"
+      ]
+    },
+    "audio_event": "glass_breaking",
+    "zone_context": {
+      "zone_name": "Dormitory",
+      "zone_id": "dormitory",
+      "is_high_risk_time": true,
+      "correlation_note": "Audio-visual correlation: 0.70"
+    },
+    "audio_anomaly": {
+      "anomaly_type": "loud_music",
+      "confidence": 0.7880202065490727,
+      "severity": 2,
+      "description": "Excessive noise levels detected",
+      "campus_context": "Noise violation in quiet zone",
+      "response_required": "Issue noise warning",
+      "audio_features": {
+        "duration_seconds": 9.599306681407361,
+        "peak_frequency_hz": 5780.2158227561295,
+        "amplitude_db": 86.28267553421738,
+        "spectral_centroid": 1377.211708248146,
+        "zero_crossing_rate": 0.18038044277697418,
+        "mfcc_coefficients": [
+          -1.0859726626446538,
+          9.768776969733999,
+          -3.926526474710017,
+          -5.682735838541828,
+          -3.06250486022728,
+          -8.595275797923506,
+          -6.621912770580744,
+          2.1594504212585885,
+          -4.450212039926191,
+          0.8064109741743728,
+          -0.02861730808522367,
+          -6.505672853253479,
+          8.04815447880657
+        ],
+        "spectral_rolloff": 7840.171636173168,
+        "chroma_features": [
+          0.7608761100828431,
+          0.9142244530122586,
+          0.09058084394061228,
+          0.20272143521752894,
+          0.09734204500378751,
+          0.6814243479690464,
+          0.3553922567613007,
+          0.02309514698624293,
+          0.5924925617861516,
+          0.15765618810011306,
+          0.10882783469186585,
+          0.23103817905334445
+        ]
+      },
+      "detection_timestamp": "2025-07-27T16:38:53.036211",
+      "zone_correlation": "dormitory",
+      "visual_event_correlation": "intrusion"
+    },
+    "audio_visual_correlation": {
+      "correlation_strength": 0.7,
+      "correlation_factors": [
+        "Temporal correlation",
+        "Spatial correlation"
+      ],
+      "is_correlated": true,
+      "combined_severity": 2,
+      "multimodal_confidence": 0.8490101032745363
+    },
+    "suggested_priority": 2
+  },
+  "analysis_timestamp": "2025-07-27T16:39:15.078105",
+  "analyzer": "Gemini-1.5-Pro",
+  "alert_id": "20250727_163915_intrusion",
+  "created_at": "2025-07-27T11:09:15.078105+00:00",
+  "status": "active"
+}

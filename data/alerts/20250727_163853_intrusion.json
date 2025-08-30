@@ -1,0 +1,45 @@
+{
+  "alert": "\ud83d\udea8 CRITICAL: Fence Breach at Student Dormitory! Unauthorized person detected climbing fence.",
+  "priority": 4,
+  "recommended_action": "Dispatch security units immediately to Gate3 at the Student Dormitory. Apprehend the unauthorized individual. Advise units that two authorized students (John_Doe, Sarah_Wilson) are also on scene.",
+  "explanation": "A confirmed unauthorized individual has actively breached a secure perimeter at a highly sensitive location (Student Dormitory). The act of climbing the fence constitutes a gate_climbing_intrusion, which requires an immediate response to ensure student safety and secure the premises.",
+  "risk_factors": [
+    "Perimeter breach",
+    "Unauthorized individual",
+    "Sensitive location (Student Dormitory)",
+    "Intentional circumvention of security"
+  ],
+  "follow_up_required": true,
+  "source_event": {
+    "camera_id": "Gate3",
+    "timestamp": "2025-07-27T16:38:37.629351",
+    "video_time_seconds": 0,
+    "frame_number": 7384,
+    "event_type": "intrusion",
+    "description": "Person climbing over fence",
+    "model_confidence": 0.95,
+    "location": "Student Dormitory",
+    "face_verification": {
+      "total_faces": 0,
+      "authorized_faces": 2,
+      "unauthorized_faces": 1,
+      "authorized_names": [
+        "John_Doe",
+        "Sarah_Wilson"
+      ]
+    },
+    "audio_event": "none",
+    "zone_context": {
+      "zone_name": "Parking Lot",
+      "zone_id": "parking_lot",
+      "is_high_risk_time": false
+    },
+    "audio_anomaly": null,
+    "audio_visual_correlation": null
+  },
+  "analysis_timestamp": "2025-07-27T16:38:53.029375",
+  "analyzer": "Gemini-1.5-Pro",
+  "alert_id": "20250727_163853_intrusion",
+  "created_at": "2025-07-27T11:08:53.030429+00:00",
+  "status": "active"
+}

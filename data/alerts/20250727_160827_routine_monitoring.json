@@ -1,0 +1,59 @@
+{
+  "alert": "\u26a0\ufe0f Unidentified Individual Detected Inside Student Dormitory",
+  "priority": 3,
+  "recommended_action": "Dispatch officer to the Student Dormitory to identify the individual and verify their authorization to be on the premises.",
+  "explanation": "An unidentified person was detected inside a sensitive location (Student Dormitory) where privacy and safety are paramount. The system could not verify their identity, and the sound of a closing door suggests entry/exit. A check is required to rule out unauthorized access or a potential threat to residents.",
+  "risk_factors": [
+    "Presence of an unknown individual in a private residential area",
+    "Potential for unauthorized access, theft, or threat to student safety",
+    "Failure to identify the person via facial recognition"
+  ],
+  "follow_up_required": true,
+  "source_event": {
+    "camera_id": "CAM_DORMITORY",
+    "timestamp": "2025-07-27T10:38:02.073313+00:00",
+    "event_type": "routine_monitoring",
+    "description": "Detected: 1 person. in Student Residence Hall",
+    "model_confidence": 0.89,
+    "location": "Student Dormitory",
+    "zone_context": {
+      "zone_name": "Student Residence Hall",
+      "zone_id": "dormitory",
+      "risk_factors": [],
+      "priority_boost": 0,
+      "is_high_risk_time": false,
+      "rules_triggered": 0
+    },
+    "detected_objects": [
+      {
+        "class": "person",
+        "confidence": 0.8864161372184753,
+        "bbox": [
+          544,
+          281,
+          681,
+          603
+        ]
+      }
+    ],
+    "face_verification": {
+      "total_faces": 0,
+      "authorized_faces": 0,
+      "unauthorized_faces": 0,
+      "authorized_names": [],
+      "has_unauthorized": false
+    },
+    "audio_event": "door_closing",
+    "suggested_priority": 2,
+    "video_time_seconds": 0.0,
+    "frame_number": 0,
+    "processing_method": "enhanced_detection",
+    "audio_anomaly": null,
+    "audio_visual_correlation": null
+  },
+  "analysis_timestamp": "2025-07-27T16:08:27.437678",
+  "analyzer": "Gemini-1.5-Pro",
+  "alert_id": "20250727_160827_routine_monitoring",
+  "created_at": "2025-07-27T10:38:27.437678+00:00",
+  "status": "active"
+}

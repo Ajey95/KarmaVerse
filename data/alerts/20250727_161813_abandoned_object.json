@@ -1,0 +1,44 @@
+{
+  "alert": "\ud83d\udea8 CRITICAL ALERT: Suspicious package detected in the Library parking area (Gate 3).",
+  "priority": 4,
+  "recommended_action": "IMMEDIATE RESPONSE REQUIRED. Dispatch patrol to establish a safe cordon around the package. DO NOT approach or handle the object. Begin evacuation of the Library and immediate parking area. Attempt to locate the unauthorized individual detected on camera for questioning. Notify local law enforcement.",
+  "explanation": "Priority is set to Critical due to the combination of a suspicious package and the confirmed presence of an unauthorized individual at the location. The object poses a potential, significant threat to safety in a high-traffic area.",
+  "risk_factors": [
+    "Potential explosive device",
+    "Presence of an unidentified/unauthorized person",
+    "High-traffic public location (Library)",
+    "Afternoon hours with high potential for casualties"
+  ],
+  "follow_up_required": true,
+  "source_event": {
+    "camera_id": "Gate3",
+    "timestamp": "2025-07-27T16:17:54.453012",
+    "video_time_seconds": 0,
+    "frame_number": 6929,
+    "event_type": "abandoned_object",
+    "description": "Suspicious package detected in parking area",
+    "model_confidence": 0.92,
+    "location": "Library",
+    "face_verification": {
+      "total_faces": 3,
+      "authorized_faces": 1,
+      "unauthorized_faces": 1,
+      "authorized_names": [
+        "Jane_Smith"
+      ]
+    },
+    "audio_event": "none",
+    "zone_context": {
+      "zone_name": "Library",
+      "zone_id": "library",
+      "is_high_risk_time": true
+    },
+    "audio_anomaly": null,
+    "audio_visual_correlation": null
+  },
+  "analysis_timestamp": "2025-07-27T16:18:13.494744",
+  "analyzer": "Gemini-1.5-Pro",
+  "alert_id": "20250727_161813_abandoned_object",
+  "created_at": "2025-07-27T10:48:13.497311+00:00",
+  "status": "active"
+}

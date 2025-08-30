@@ -1,0 +1,62 @@
+{
+  "alert": "\ud83d\udea8 CRITICAL ALERT: Unauthorized Intrusion Detected in Academic Library",
+  "priority": 4,
+  "recommended_action": "Dispatch security units to the Library immediately. Secure all exits and entrances. Locate and confront the unauthorized individual. Advise units that subject may be attempting to force entry into restricted areas (based on door rattling audio).",
+  "explanation": "An unauthorized individual has been positively identified inside the Academic Library. The associated audio anomaly of 'door rattling' indicates a potential forced entry or an attempt to breach secured areas within the building, posing a significant and immediate risk to occupants and property.",
+  "risk_factors": [
+    "Confirmed unauthorized individual",
+    "Intrusion into sensitive building (Library)",
+    "Audio evidence of forced entry attempt (door rattling)",
+    "Potential threat to students and staff"
+  ],
+  "follow_up_required": true,
+  "source_event": {
+    "camera_id": "CAM_LIBRARY",
+    "timestamp": "2025-07-27T10:49:02.330597+00:00",
+    "event_type": "potential_intrusion",
+    "description": "Detected: 1 person. 1 unauthorized person(s). in Academic Library. Risk factors: Unknown person detected",
+    "model_confidence": 0.98,
+    "location": "Library",
+    "zone_context": {
+      "zone_name": "Academic Library",
+      "zone_id": "library",
+      "risk_factors": [
+        "Unknown person detected"
+      ],
+      "priority_boost": 1,
+      "is_high_risk_time": false,
+      "rules_triggered": 1
+    },
+    "detected_objects": [
+      {
+        "class": "person",
+        "confidence": 0.9202396869659424,
+        "bbox": [
+          393,
+          82,
+          688,
+          634
+        ]
+      }
+    ],
+    "face_verification": {
+      "total_faces": 1,
+      "authorized_faces": 0,
+      "unauthorized_faces": 1,
+      "authorized_names": [],
+      "has_unauthorized": true
+    },
+    "audio_event": "door_rattling",
+    "suggested_priority": 3,
+    "video_time_seconds": 7.5,
+    "frame_number": 180,
+    "processing_method": "enhanced_detection",
+    "audio_anomaly": null,
+    "audio_visual_correlation": null
+  },
+  "analysis_timestamp": "2025-07-27T16:20:09.699828",
+  "analyzer": "Gemini-1.5-Pro",
+  "alert_id": "20250727_162009_potential_intrusion",
+  "created_at": "2025-07-27T10:50:09.699828+00:00",
+  "status": "active"
+}

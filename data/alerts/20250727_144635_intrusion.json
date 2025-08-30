@@ -1,0 +1,46 @@
+{
+  "alert": "\ud83d\udea8 Unauthorized Person Detected - Intrusion",
+  "priority": 4,
+  "recommended_action": "Immediate security response required",
+  "explanation": "Fallback analysis due to API error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n}\nviolations {\n}\nviolations {\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 23\n}\n]",
+  "risk_factors": [
+    "API communication failure",
+    "intrusion"
+  ],
+  "follow_up_required": true,
+  "source_event": {
+    "camera_id": "Gate3",
+    "timestamp": "2025-07-27T14:46:34.447700",
+    "video_time_seconds": 0,
+    "frame_number": 6033,
+    "event_type": "intrusion",
+    "description": "Individual bypassing security checkpoint",
+    "model_confidence": 0.95,
+    "location": "Construction Zone",
+    "face_verification": {
+      "total_faces": 2,
+      "authorized_faces": 2,
+      "unauthorized_faces": 2,
+      "authorized_names": [
+        "Sarah_Wilson",
+        "John_Doe"
+      ]
+    },
+    "audio_event": "none",
+    "zone_context": {
+      "zone_name": "Main Gate",
+      "zone_id": "main_gate",
+      "is_high_risk_time": true
+    },
+    "audio_anomaly": null,
+    "audio_visual_correlation": null
+  },
+  "analysis_timestamp": "2025-07-27T14:46:35.692857",
+  "analyzer": "Fallback-System",
+  "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n}\nviolations {\n}\nviolations {\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 23\n}\n]",
+  "alert_id": "20250727_144635_intrusion",
+  "created_at": "2025-07-27T09:16:35.692857+00:00",
+  "status": "false_positive",
+  "status_updated_at": "2025-07-27T09:44:30.335250+00:00",
+  "status_notes": "Marked as false positive"
+}

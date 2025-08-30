@@ -1,0 +1,39 @@
+{
+  "alert": "\ud83d\udea8 Abandoned Object Detected",
+  "priority": 2,
+  "recommended_action": "Investigate abandoned_object at Admin Building",
+  "explanation": "Suspicious package detected in parking area",
+  "source_event": {
+    "camera_id": "Gate3",
+    "timestamp": "2025-07-27T15:13:24.135914",
+    "video_time_seconds": 0,
+    "frame_number": 6172,
+    "event_type": "abandoned_object",
+    "description": "Suspicious package detected in parking area",
+    "model_confidence": 0.85,
+    "location": "Admin Building",
+    "face_verification": {
+      "total_faces": 2,
+      "authorized_faces": 1,
+      "unauthorized_faces": 2,
+      "authorized_names": [
+        "Jane_Smith"
+      ]
+    },
+    "audio_event": "shouting",
+    "zone_context": {
+      "zone_name": "Dormitory",
+      "zone_id": "dormitory",
+      "is_high_risk_time": true
+    },
+    "audio_anomaly": null,
+    "audio_visual_correlation": null
+  },
+  "analysis_timestamp": "2025-07-27T15:13:24.137916",
+  "analyzer": "Demo-Fallback-System",
+  "alert_id": "20250727_151324_abandoned_object",
+  "created_at": "2025-07-27T09:43:24.137916+00:00",
+  "status": "resolved",
+  "status_updated_at": "2025-07-27T10:17:02.771132+00:00",
+  "status_notes": "Resolved via dashboard"
+}

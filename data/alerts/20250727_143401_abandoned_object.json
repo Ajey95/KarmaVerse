@@ -1,0 +1,46 @@
+{
+  "alert": "\ud83d\udea8 Unauthorized Person Detected - Abandoned Object",
+  "priority": 4,
+  "recommended_action": "Immediate security response required",
+  "explanation": "Fallback analysis due to API error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n}\nviolations {\n}\nviolations {\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 57\n}\n]",
+  "risk_factors": [
+    "API communication failure",
+    "abandoned_object"
+  ],
+  "follow_up_required": true,
+  "source_event": {
+    "camera_id": "Gate3",
+    "timestamp": "2025-07-27T14:34:01.234812",
+    "video_time_seconds": 0,
+    "frame_number": 795,
+    "event_type": "abandoned_object",
+    "description": "Unattended bag left near entrance",
+    "model_confidence": 0.81,
+    "location": "Library",
+    "face_verification": {
+      "total_faces": 2,
+      "authorized_faces": 2,
+      "unauthorized_faces": 1,
+      "authorized_names": [
+        "Jane_Smith",
+        "Mike_Johnson"
+      ]
+    },
+    "audio_event": "none",
+    "zone_context": {
+      "zone_name": "Construction Site",
+      "zone_id": "construction_site",
+      "is_high_risk_time": true
+    },
+    "audio_anomaly": null,
+    "audio_visual_correlation": null
+  },
+  "analysis_timestamp": "2025-07-27T14:34:01.900325",
+  "analyzer": "Fallback-System",
+  "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n}\nviolations {\n}\nviolations {\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 57\n}\n]",
+  "alert_id": "20250727_143401_abandoned_object",
+  "created_at": "2025-07-27T09:04:01.900325+00:00",
+  "status": "investigating",
+  "status_updated_at": "2025-07-27T09:44:11.558508+00:00",
+  "status_notes": "Under investigation"
+}

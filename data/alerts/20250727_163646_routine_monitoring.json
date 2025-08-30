@@ -1,0 +1,57 @@
+{
+  "alert": "Normal Activity Detected in Library \ud83d\udcda",
+  "priority": 1,
+  "recommended_action": "No action required. Continue routine monitoring.",
+  "explanation": "The presence of a single individual in the library during normal operating hours, accompanied by the sound of page-turning, is consistent with expected, benign activity. No threat indicators are present.",
+  "risk_factors": [
+    "None identified"
+  ],
+  "follow_up_required": false,
+  "source_event": {
+    "camera_id": "CAM_LIBRARY",
+    "timestamp": "2025-07-27T11:06:25.761740+00:00",
+    "event_type": "routine_monitoring",
+    "description": "Detected: 1 person. in Academic Library",
+    "model_confidence": 0.89,
+    "location": "Library",
+    "zone_context": {
+      "zone_name": "Academic Library",
+      "zone_id": "library",
+      "risk_factors": [],
+      "priority_boost": 0,
+      "is_high_risk_time": false,
+      "rules_triggered": 0
+    },
+    "detected_objects": [
+      {
+        "class": "person",
+        "confidence": 0.8864161372184753,
+        "bbox": [
+          544,
+          281,
+          681,
+          603
+        ]
+      }
+    ],
+    "face_verification": {
+      "total_faces": 0,
+      "authorized_faces": 0,
+      "unauthorized_faces": 0,
+      "authorized_names": [],
+      "has_unauthorized": false
+    },
+    "audio_event": "page_turning",
+    "suggested_priority": 2,
+    "video_time_seconds": 0.0,
+    "frame_number": 0,
+    "processing_method": "enhanced_detection",
+    "audio_anomaly": null,
+    "audio_visual_correlation": null
+  },
+  "analysis_timestamp": "2025-07-27T16:36:46.859209",
+  "analyzer": "Gemini-1.5-Pro",
+  "alert_id": "20250727_163646_routine_monitoring",
+  "created_at": "2025-07-27T11:06:46.860248+00:00",
+  "status": "active"
+}

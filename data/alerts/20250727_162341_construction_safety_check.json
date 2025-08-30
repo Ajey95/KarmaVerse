@@ -1,0 +1,119 @@
+{
+  "alert": "\ud83d\udc77 Safety Check: Person detected in Construction Zone. Verify PPE compliance.",
+  "priority": 2,
+  "recommended_action": "Contact the construction site supervisor to verify the individual's authorization and confirm they are wearing appropriate Personal Protective Equipment (PPE).",
+  "explanation": "Priority is medium as the individual is in a high-hazard area during active operations. The primary concern is safety compliance (PPE), not a security intrusion, as presence in this zone during work hours can be legitimate.",
+  "risk_factors": [
+    "Presence in a high-hazard construction area",
+    "Unverified Personal Protective Equipment (PPE) status",
+    "Proximity to active heavy machinery"
+  ],
+  "follow_up_required": true,
+  "source_event": {
+    "camera_id": "CAM_CONSTRUCTION_SITE",
+    "timestamp": "2025-07-27T10:53:01.940681+00:00",
+    "event_type": "construction_safety_check",
+    "description": "Detected: 1 person. in Campus Construction Zone. Risk factors: Person in construction zone - safety gear check required. Audio: Heavy machinery operation",
+    "model_confidence": 0.8865924456864496,
+    "location": "Construction Zone",
+    "zone_context": {
+      "zone_name": "Campus Construction Zone",
+      "zone_id": "construction_site",
+      "risk_factors": [
+        "Person in construction zone - safety gear check required"
+      ],
+      "priority_boost": 1,
+      "is_high_risk_time": false,
+      "rules_triggered": 1,
+      "correlation_note": "Audio-visual correlation: 1.00"
+    },
+    "detected_objects": [
+      {
+        "class": "person",
+        "confidence": 0.9188568592071533,
+        "bbox": [
+          527,
+          84,
+          778,
+          582
+        ]
+      }
+    ],
+    "face_verification": {
+      "total_faces": 0,
+      "authorized_faces": 0,
+      "unauthorized_faces": 0,
+      "authorized_names": [],
+      "has_unauthorized": false
+    },
+    "audio_event": "machinery_noise",
+    "suggested_priority": 3,
+    "video_time_seconds": 2.5,
+    "frame_number": 60,
+    "processing_method": "enhanced_detection",
+    "audio_anomaly": {
+      "anomaly_type": "machinery_noise",
+      "confidence": 0.7931848913728993,
+      "severity": 2,
+      "description": "Heavy machinery operation",
+      "campus_context": "Construction or maintenance activity",
+      "response_required": "Verify authorized work",
+      "audio_features": {
+        "duration_seconds": 265.98429194622383,
+        "peak_frequency_hz": 830.4211455813438,
+        "amplitude_db": 83.16354656996445,
+        "spectral_centroid": 2875.645091177247,
+        "zero_crossing_rate": 0.23473806038974915,
+        "mfcc_coefficients": [
+          8.76146716201739,
+          -7.90038875963041,
+          4.8904125329104975,
+          3.699193988309693,
+          8.712623510774897,
+          5.30934599225745,
+          4.623884637938499,
+          4.806459586662818,
+          -9.816637007749456,
+          5.039005650061263,
+          9.544389626346515,
+          -5.149149016494667,
+          5.795171423839081
+        ],
+        "spectral_rolloff": 3074.2999688711216,
+        "chroma_features": [
+          0.9158878522670619,
+          0.5797136716356538,
+          0.886267998134695,
+          0.39380330567987787,
+          0.3436181414329281,
+          0.31699413937535326,
+          0.5802849854265716,
+          0.5060711399304824,
+          0.425646017200242,
+          0.8487266363693943,
+          0.6567820895395037,
+          0.908656251372323
+        ]
+      },
+      "detection_timestamp": "2025-07-27T16:23:06.344063",
+      "zone_correlation": "construction_site",
+      "visual_event_correlation": "construction_safety_check"
+    },
+    "audio_visual_correlation": {
+      "correlation_strength": 1.0,
+      "correlation_factors": [
+        "Temporal correlation",
+        "Spatial correlation",
+        "Event-type correlation: machinery_noise + construction"
+      ],
+      "is_correlated": true,
+      "combined_severity": 3,
+      "multimodal_confidence": 0.8865924456864496
+    }
+  },
+  "analysis_timestamp": "2025-07-27T16:23:41.233311",
+  "analyzer": "Gemini-1.5-Pro",
+  "alert_id": "20250727_162341_construction_safety_check",
+  "created_at": "2025-07-27T10:53:41.233311+00:00",
+  "status": "active"
+}

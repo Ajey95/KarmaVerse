@@ -1,0 +1,43 @@
+{
+  "alert": "\ud83d\udea8 Unauthorized Person Detected - Crowd Formation",
+  "priority": 4,
+  "recommended_action": "Immediate security response required",
+  "explanation": "Fallback analysis due to API error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n}\nviolations {\n}\nviolations {\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 54\n}\n]",
+  "risk_factors": [
+    "API communication failure",
+    "crowd_formation"
+  ],
+  "follow_up_required": true,
+  "source_event": {
+    "camera_id": "Gate3",
+    "timestamp": "2025-07-27T14:34:03.534401",
+    "video_time_seconds": 0,
+    "frame_number": 6490,
+    "event_type": "crowd_formation",
+    "description": "Unusual crowd density near main gate",
+    "model_confidence": 0.85,
+    "location": "Parking Lot",
+    "face_verification": {
+      "total_faces": 1,
+      "authorized_faces": 1,
+      "unauthorized_faces": 1,
+      "authorized_names": [
+        "Jane_Smith"
+      ]
+    },
+    "audio_event": "none",
+    "zone_context": {
+      "zone_name": "Main Gate",
+      "zone_id": "main_gate",
+      "is_high_risk_time": true
+    },
+    "audio_anomaly": null,
+    "audio_visual_correlation": null
+  },
+  "analysis_timestamp": "2025-07-27T14:34:04.709892",
+  "analyzer": "Fallback-System",
+  "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n}\nviolations {\n}\nviolations {\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 54\n}\n]",
+  "alert_id": "20250727_143404_crowd_formation",
+  "created_at": "2025-07-27T09:04:04.709892+00:00",
+  "status": "active"
+}

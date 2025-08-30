@@ -1,0 +1,119 @@
+{
+  "alert": "\u26a0\ufe0f CRITICAL: Possible Injury or Distress in Construction Zone!",
+  "priority": 4,
+  "recommended_action": "Dispatch patrol unit immediately to the Construction Zone (CAM_CONSTRUCTION_SITE) to investigate shouting. Advise officer to approach with caution and be prepared to request medical assistance.",
+  "explanation": "Priority is CRITICAL due to the combination of an unknown person in a hazardous construction area and the audio detection of shouting. This strongly indicates a potential accident, injury, or distress situation requiring an urgent welfare check.",
+  "risk_factors": [
+    "Audio anomaly: shouting detected",
+    "Unknown individual in a restricted hazardous area",
+    "Potential for serious injury",
+    "Power tools in operation"
+  ],
+  "follow_up_required": true,
+  "source_event": {
+    "camera_id": "CAM_CONSTRUCTION_SITE",
+    "timestamp": "2025-07-27T10:45:46.229441+00:00",
+    "event_type": "construction_safety_check",
+    "description": "Detected: 1 person. in Campus Construction Zone. Risk factors: Person in construction zone - safety gear check required. Audio: Power tool operation detected",
+    "model_confidence": 0.85077897558239,
+    "location": "Construction Zone",
+    "zone_context": {
+      "zone_name": "Campus Construction Zone",
+      "zone_id": "construction_site",
+      "risk_factors": [
+        "Person in construction zone - safety gear check required"
+      ],
+      "priority_boost": 1,
+      "is_high_risk_time": false,
+      "rules_triggered": 1,
+      "correlation_note": "Audio-visual correlation: 0.70"
+    },
+    "detected_objects": [
+      {
+        "class": "person",
+        "confidence": 0.8864161372184753,
+        "bbox": [
+          544,
+          281,
+          681,
+          603
+        ]
+      }
+    ],
+    "face_verification": {
+      "total_faces": 0,
+      "authorized_faces": 0,
+      "unauthorized_faces": 0,
+      "authorized_names": [],
+      "has_unauthorized": false
+    },
+    "audio_event": "shouting",
+    "suggested_priority": 3,
+    "video_time_seconds": 0.0,
+    "frame_number": 0,
+    "processing_method": "enhanced_detection",
+    "audio_anomaly": {
+      "anomaly_type": "power_tool_noise",
+      "confidence": 0.7215579511647799,
+      "severity": 1,
+      "description": "Power tool operation detected",
+      "campus_context": "Maintenance or construction work",
+      "response_required": "Verify work authorization",
+      "audio_features": {
+        "duration_seconds": 5.108829699065081,
+        "peak_frequency_hz": 6394.790041857734,
+        "amplitude_db": 94.05354191146611,
+        "spectral_centroid": 2409.2702723724574,
+        "zero_crossing_rate": 0.16127604058868988,
+        "mfcc_coefficients": [
+          -1.485263571118029,
+          2.1013984431358086,
+          -0.3248807261352411,
+          7.39551118675206,
+          6.58691251281445,
+          9.112387412358835,
+          -4.654158265761015,
+          -4.285756169823147,
+          -6.530263732944386,
+          -1.0319670713429208,
+          -1.6146203631087648,
+          -2.2234628398642275,
+          -3.4758927563404978
+        ],
+        "spectral_rolloff": 7888.143328700251,
+        "chroma_features": [
+          0.7947356711726198,
+          0.8567899998328232,
+          0.6919041895117892,
+          0.08724511650093814,
+          0.20846800911483998,
+          0.7654747238664762,
+          0.5071120964060185,
+          0.7128433486145712,
+          0.14265397811452774,
+          0.3326317901727399,
+          0.7830373466048761,
+          0.29720358838379635
+        ]
+      },
+      "detection_timestamp": "2025-07-27T16:15:54.747377",
+      "zone_correlation": "construction_site",
+      "visual_event_correlation": "construction_safety_check"
+    },
+    "audio_visual_correlation": {
+      "correlation_strength": 0.7,
+      "correlation_factors": [
+        "Temporal correlation",
+        "Spatial correlation"
+      ],
+      "is_correlated": true,
+      "combined_severity": 3,
+      "multimodal_confidence": 0.85077897558239
+    }
+  },
+  "analysis_timestamp": "2025-07-27T16:16:13.896528",
+  "analyzer": "Gemini-1.5-Pro",
+  "alert_id": "20250727_161613_construction_safety_check",
+  "created_at": "2025-07-27T10:46:13.896528+00:00",
+  "status": "active"
+}
